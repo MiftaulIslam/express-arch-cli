@@ -1,0 +1,59 @@
+{
+  "name": "express-arch-cli",
+  "version": "1.0.0",
+  "description": "CLI scaffolder for architecture-aware Express + TypeScript backends with interactive prompts and stack selection",
+  "type": "module",
+  "homepage": "miftaul.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MiftaulIslam/express-arch-cli"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "express-arch-cli": "./bin/express-arch-cli.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "src/templates"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "scaffolder",
+    "typescript",
+    "node",
+    "express",
+    "cli",
+    "generator",
+    "express typescript",
+    "express ts generator",
+    "express generator",
+    "typescript generator",
+    "generator",
+    "express boilerplate",
+    "express quickstart"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^7.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.1",
+    "@typescript-eslint/eslint-plugin": "^8.43.0",
+    "@typescript-eslint/parser": "^8.43.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

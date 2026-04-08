@@ -1,6 +1,7 @@
 {
   "name": "express-arch-cli",
   "version": "1.0.0",
+  "private": false,
   "description": "CLI scaffolder for architecture-aware Express + TypeScript backends with interactive prompts and stack selection",
   "type": "module",
   "homepage": "miftaul.com",
